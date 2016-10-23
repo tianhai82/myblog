@@ -1,1 +1,1 @@
-# My personal blog for www.tanyinloo.com
+# My personal blog for blog.tanyinloo.com
