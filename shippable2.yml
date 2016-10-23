@@ -1,0 +1,27 @@
+language: none                                       
+
+services:                                       
+  - #any supported service  
+
+env:                                                
+  - BRANCH=master                           
+  - #env2=bar
+
+matrix: 
+
+integrations:
+  notifications:
+    - integrationName: email
+      type: email
+      recipients:
+        - tianhai@gmail.com
+      branches:
+        only:
+          - master
+          - dev
+      on_success: always
+      on_failure: always
+
+  hub:
+    - integrationName: gcr
+      type: docker
